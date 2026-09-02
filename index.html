@@ -111,7 +111,7 @@ body{font-family:'Kaisei HarunoUmi',serif;color:var(--ink);background:var(--md);
 .about::before{content:'魂';position:absolute;font-family:'Yuji Syuku',serif;font-size:15rem;color:rgba(91,26,24,.025);top:-2rem;right:-2rem;pointer-events:none}
 .about-in{max-width:1100px;margin:0 auto;overflow:hidden}
 .about-grid{display:grid;grid-template-columns:1fr;gap:2rem;margin-top:1.5rem}
-.about-img{aspect-ratio:16/9;position:relative;overflow:hidden;border:2px solid rgba(196,162,101,.2);max-height:200px;background-color:var(--md)}
+.about-img{aspect-ratio:16/9;position:relative;overflow:hidden;border:2px solid rgba(196,162,101,.2);max-height:250px;background-color:var(--md)}
 .about-img-in{width:100%;height:100%;display:flex;justify-content:center;align-items:center;background:rgba(31,9,8,.5);flex-direction:column;gap:.5rem}
 .about-img-in img{width:60%;filter:drop-shadow(0 0 15px rgba(196,162,101,.3))}
 .about-img::before,.about-img::after{content:'';position:absolute;width:35px;height:35px;border-color:var(--g);border-style:solid;z-index:2;transition:all .4s}
@@ -281,9 +281,9 @@ body{font-family:'Kaisei HarunoUmi',serif;color:var(--ink);background:var(--md);
 .rv.vis{opacity:1;transform:translateY(0)}
 
 /* === FOOD BANNER === */
-.fbanner{position:relative;z-index:3;height:25vh;min-height:160px;overflow:hidden;background-size:cover;background-position:center;background-attachment:scroll}
-.fbanner-ov{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;text-align:center;padding:1rem}
-.fbanner-ov p{font-size:clamp(.9rem,3vw,1.8rem);color:var(--g);letter-spacing:.04em;line-height:1.2;-webkit-text-stroke:.8px var(--g)}
+.fbanner{position:relative;z-index:3;height:30vh;min-height:200px;overflow:hidden;background-size:cover;background-position:center;background-attachment:scroll}
+.fbanner-ov{position:absolute;inset:0;display:flex;justify-content:center;align-items:center;text-align:center;padding:1.5rem}
+.fbanner-ov p{font-size:clamp(1.3rem,4.5vw,2.5rem);color:var(--g);letter-spacing:.04em;line-height:1.2;-webkit-text-stroke:.8px var(--g)}
 
 /* ========= DESKTOP ========= */
 @media(min-width:769px){
@@ -407,9 +407,8 @@ body{font-family:'Kaisei HarunoUmi',serif;color:var(--ink);background:var(--md);
   <div class="about-in">
     <div class="sh rv"><p class="sl">Brand Story</p><h2 class="st bf">安いソースでは<br>絶対に出せない味がある</h2><div class="sd"></div></div>
     <div class="about-grid">
-      <div class="about-img rv" style="background:linear-gradient(135deg,var(--md),var(--m));display:flex;justify-content:center;align-items:center;gap:.5rem;padding:1rem">
-        <img src="bottle-aka.png" alt="だんじりソース 極み和からし" style="height:80%;max-height:250px;width:auto;filter:drop-shadow(0 5px 15px rgba(0,0,0,.4))">
-        <img src="bottle-shiro.png" alt="だんじりソース 旨みと甘み" style="height:80%;max-height:250px;width:auto;filter:drop-shadow(0 5px 15px rgba(0,0,0,.4))">
+      <div class="about-img rv" style="background:var(--md);overflow:hidden">
+        <img src="sauce-splash.jpg" alt="だんじりソース" style="width:100%;height:100%;object-fit:cover;display:block">
       </div>
       <div class="rv">
         <h3 class="bf">「もっと美味いソースがあるはずや」<br>その一心で作りました</h3>
